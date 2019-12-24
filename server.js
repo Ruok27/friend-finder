@@ -5,7 +5,7 @@ let path = require('path');
 
 
 
-const PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 
 // viewed at http://localhost:8080
