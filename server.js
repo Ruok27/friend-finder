@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
-    res.json(path.join(__dirname + '/app/public/home.html'));
+    res.sendFile(path.join(__dirname + '/app/public/home.html'));
 });
 
 app.listen(PORT, function() {
